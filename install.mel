@@ -1,0 +1,12 @@
+/* FBX Importer install script */
+
+global proc installTm8rFBXImporter(){
+    string $whatIs = `whatIs installTm8rFBXImporter`;
+    string $tmpPath = `match ": (.*)" $whatIs`;
+    string $melPath = `substitute ": " $tmpPath ""`;
+    string $pythonPath = `substitute "install.mel" $melPath "install.py"`;
+    print($pythonPath);
+    python("import imp;imp.load_source('_installTm8rFBXImporter', '"+$pythonPath+"')");
+}
+
+installTm8rFBXImporter();

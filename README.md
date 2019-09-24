@@ -1,5 +1,5 @@
 # MayaFBXImporter
-![fbx_importer](https://user-images.githubusercontent.com/1896961/65010402-b6d91c80-d94a-11e9-876b-387f01718907.png)
+![fbx_importer](https://user-images.githubusercontent.com/1896961/65481422-3e390980-ded0-11e9-94b0-a636b7d5003a.png)
 
 FBX importer for Autodesk Maya.
 

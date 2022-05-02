@@ -32,7 +32,7 @@ def add_recent_file(path):
     if cmds.optionVar(ex=_RECENT_FILES_KEY):
         files = cmds.optionVar(q=_RECENT_FILES_KEY)
 
-        for i in xrange(0, len(files)):
+        for i in range(0, len(files)):
             if path == files[i]:
                 cmds.optionVar(rfa=(_RECENT_FILES_KEY, i))
                 break
@@ -43,5 +43,5 @@ def add_recent_file(path):
     if len(files) <= _RECENT_FILES_LIMIT:
         return
 
-    for i in xrange(0, len(files) - _RECENT_FILES_LIMIT):
+    for i in xange(0, len(files) - _RECENT_FILES_LIMIT):
         cmds.optionVar(rfa=(_RECENT_FILES_KEY, 0))
